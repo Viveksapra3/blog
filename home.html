@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html
+  lang="en"
+  data-wf-locale="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <style>
+      .wf-force-outline-none[tabindex="-1"]:focus {
+        outline: none;
+      }
+    </style>
+    <title>Travel4Soul</title>
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <link
+      href="./home_files/the-alps.84522510d.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link rel="stylesheet" href="./home_files/css" media="all" />
+    <link
+      href="/IMG/logo.svg"
+      rel="shortcut icon"
+      type="image/x-icon"
+    />
+    <style>
+      @media screen and (orientation: landscape) {
+        .text {
+          opacity: 0;
+        }
+      }
+    </style>
+    <style type="text/css">
+      #_copy {
+        align-items: center;
+        background: #4494d5;
+        border-radius: 3px;
+        color: #fff;
+        cursor: pointer;
+        display: flex;
+        font-size: 13px;
+        height: 30px;
+        justify-content: center;
+        position: absolute;
+        width: 60px;
+        z-index: 1000;
+      }
+      #select-tooltip,
+      #sfModal,
+      .modal-backdrop,
+      div[id^="reader-helper"] {
+        display: none !important;
+      }
+      .modal-open {
+        overflow: auto !important;
+      }
+      ._sf_adjust_body {
+        padding-right: 0 !important;
+      }
+      .enable_copy_btns_div {
+        position: fixed;
+        width: 154px;
+        left: 10px;
+        top: 45%;
+        background: #e7f1ff;
+        border: 2px solid #4595d5;
+        font-weight: 600;
+        border-radius: 2px;
+        font-family: -apple-system, BlinkMacSystemFont, Segoe UI, PingFang SC,
+          Hiragino Sans GB, Microsoft YaHei, Helvetica Neue, Helvetica, Arial,
+          sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;
+        z-index: 5000;
+      }
+      .enable_copy_btns_logo {
+        width: 100%;
+        background: #4595d5;
+        text-align: center;
+        font-size: 12px;
+        color: #e7f1ff;
+        line-height: 30px;
+        height: 30px;
+      }
+      .enable_copy_btns_btn {
+        display: block;
+        width: 128px;
+        height: 28px;
+        background: #7f5711;
+        border-radius: 4px;
+        color: #fff;
+        font-size: 12px;
+        border: 0;
+        outline: 0;
+        margin: 8px auto;
+        font-weight: 700;
+        cursor: pointer;
+        opacity: 0.9;
+      }
+      .enable_copy_btns_btn:hover {
+        opacity: 0.8;
+      }
+      .enable_copy_btns_btn:active {
+        opacity: 1;
+      }
+    </style>
+  </head>
+  <body class="body" inmaintabuse="1">
+    <header class="header transparent" id="header">
+      <img src="/IMG/logo.svg" alt="Travel4Soul Logo" >
+      <nav class="nav-links">
+          <a href="#about">About</a>
+          <a href="#destinations">Blogs</a>
+          <!-- <a href="#blog">Blog</a> -->
+          <a href="#contact">Contact</a>
+      </nav>
+  </header>
+    <!-- <div class="cusom-code w-embed"> -->
+      <style>
+        @media screen and (min-width: 1400px) {
+          body {
+            font-size: 14px;
+          }
+        }
+        * {
+          -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+        }
+        @keyframes moveClouds {
+          from {
+            transform: translateX(0);
+          }
+          to {
+            transform: translateX(100vw);
+          }
+        }
+        @media screen and (orientation: landscape) and (min-width: 480px) and (max-width: 767px) {
+          body {
+            background-color: #132142;
+          }
+          .page-wrapper {
+            display: none;
+          }
+          .rotate-message {
+            display: block;
+          }
+        }
+        .box {
+          transition: transform 2.5s cubic-bezier(0.2, 0.1, 0.2, 1),
+            filter 2.5s cubic-bezier(0.2, 0.1, 0.2, 1);
+        }
+        .page-wrapper .box-sky {
+          transform: translate(0, 0);
+        }
+        .page-wrapper.loaded .box-sky {
+          transform: translate(0, -2vh);
+        }
+        .page-wrapper.loaded .box-mountain {
+          transform: translate(0, -2.5vh);
+        }
+        .page-wrapper.loaded .cloud-box.cloud-box-far {
+          transform: scale(1.1);
+        }
+        .page-wrapper .box-cliff {
+          filter: contrast(60%);
+        }
+        .page-wrapper.loaded .box-cliff {
+          filter: contrast(90%);
+          transform: scale(1.15);
+        }
+        .page-wrapper.loaded .cloud-box.cloud-box-mid {
+          transform: scale(1.25);
+        }
+        .page-wrapper .box-subject {
+          filter: contrast(80%);
+        }
+        .page-wrapper.loaded .box-subject {
+          transform: scale(1.4);
+          filter: contrast(100%);
+        }
+        .page-wrapper.loaded .box-rock {
+          transform: scale(1.7);
+        }
+        .page-wrapper.loaded .cloud-box.cloud-box-near {
+          transform: scale(2);
+        }
+        @media screen and (orientation: landscape) {
+          .text {
+            transition: opacity 0.8s ease,
+              transform 2s cubic-bezier(0.25, 0.1, 0.25, 1),
+              filter 2s cubic-bezier(0.25, 0.1, 0.25, 1);
+            transform: scale(0.6);
+          }
+          .page-wrapper.loaded .text {
+            opacity: 1;
+            transition: opacity 1.2s 0.8s ease-in,
+              transform 2s cubic-bezier(0.25, 0.1, 0.25, 1),
+              filter 2s cubic-bezier(0.25, 0.1, 0.25, 1);
+            transform: scale(1);
+          }
+        }
+      </style>
+    </div>
+    <div class="page-wrapper loaded">
+      <div class="scene">
+        <div class="box box-sky">
+          <img
+            src="./home_files/6631244a94e197f28fa153f3_sky.webp"
+            loading="eager"
+            alt=""
+            class="img img-sky"
+            style="
+              will-change: transform;
+              transform: translate3d(-1.43886%, 0px, 0px) scale3d(1, 1, 1)
+                rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+              transform-style: preserve-3d;
+            "
+          />
+        </div>
+        <div class="box box-mountain">
+          <img
+            src="./home_files/66375c542422f75481dee7c6_mountain.png"
+            loading="eager"
+            alt=""
+            class="img img-mountains"
+            style="
+              will-change: transform;
+              transform: translate3d(-1.43886%, 0px, 0px) scale3d(1, 1, 1)
+                rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+              transform-style: preserve-3d;
+            "
+          />
+        </div>
+        <div class="mountain-glow"></div>
+        <div class="box cloud-box cloud-box-far">
+          <div
+            class="cloud cloud-far"
+            style="
+              transform: translate3d(-6.143%, 0px, 0px) scale3d(1, 1, 1)
+                rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+              transform-style: preserve-3d;
+              will-change: transform;
+            "
+          ></div>
+        </div>
+        <div class="box box-cliff">
+          <img
+            src="./home_files/66375c9cc7031af1d60c979a_cliff.png"
+            loading="eager"
+            alt=""
+            class="img img-cliff"
+            style="
+              will-change: transform;
+              transform: translate3d(0.71943%, 0px, 0px) scale3d(1, 1, 1)
+                rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+              transform-style: preserve-3d;
+            "
+          />
+        </div>
+        <div class="box cloud-box cloud-box-mid">
+          <div
+            style="
+              transform: translate3d(-6.143%, 0px, 0px) scale3d(1, 1, 1)
+                rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+              transform-style: preserve-3d;
+              will-change: transform;
+            "
+            class="cloud"
+          ></div>
+        </div>
+        <div class="box box-subject" id = "imageContainer">
+          <img
+            src="./home_files/66375be1c7031af1d60c12e7_subject.png"
+            loading="eager"
+            alt=""
+            class="img img-subject"
+            
+          />
+        </div>
+        <div class="box cloud-box cloud-box-near">
+          <div
+            class="cloud cloud-near"
+            style="
+              transform: translate3d(-6.143%, 0px, 0px) scale3d(1, 1, 1)
+                rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+              transform-style: preserve-3d;
+              will-change: transform;
+            "
+          ></div>
+        </div>
+        <div class="vignette"></div>
+      </div>
+      <div class="text" id ="contentDiv">
+        <h1>Travel4Soul</h1>
+        <p class="paragraph">
+          Explore the world, embrace the journey, and let your soul wander free.
+        </p>
+      </div>
+      <div class="lens-flare">
+        <img
+          src="./home_files/663751feecb1594f747cf830_aura2.png"
+          loading="eager"
+          sizes="30vw"
+          srcset="
+            https://assets-global.website-files.com/663123a455c9b2295a7cc16b/663751feecb1594f747cf830_aura2-p-500.png 500w,
+            https://assets-global.website-files.com/663123a455c9b2295a7cc16b/663751feecb1594f747cf830_aura2-p-800.png 800w,
+            https://assets-global.website-files.com/663123a455c9b2295a7cc16b/663751feecb1594f747cf830_aura2.png       924w
+          "
+          alt=""
+          class="aura"
+          style="will-change: opacity; opacity: 0.37426"
+        />
+        <div
+          class="discs"
+          style="
+            will-change: transform;
+            transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1)
+              rotateX(-8deg) rotateY(-14.5047deg) rotateZ(-15.6114deg)
+              skew(0deg, 0deg);
+            transform-style: preserve-3d;
+          "
+        >
+          <div class="disc"></div>
+          <div class="disc disc2"></div>
+          <div class="disc disc3"></div>
+          <div class="disc disc4"></div>
+          <div class="disc disc5"></div>
+          <div class="disc disc6"></div>
+          <div class="disc disc7"></div>
+        </div>
+      </div>
+    </div>
+    <br>
+    <section id="about" class="about">
+      <div class="container">
+        <h2>ABOUT</h2>
+        <p>
+          Travel4Soul is your gateway to the most breathtaking mountain destinations. Whether you're seeking adventure, peace, or a connection with nature, we curate unforgettable experiences that rejuvenate your soul. Join us on a journey to explore the untouched beauty of the mountains.
+        </p>
+      </div>
+    </section>
+  
+    <!-- Services Section -->
+    <!-- <section id="services" class="services">
+      <div class="container">
+        <h2>Our Services</h2>
+        <div class="service-cards">
+          <div class="card">
+            <h3>Guided Treks</h3>
+            <p>Explore the mountains with expert guides who know the trails like the back of their hand.</p>
+          </div>
+          <div class="card">
+            <h3>Custom Packages</h3>
+            <p>Tailored travel plans to suit your preferences and budget.</p>
+          </div>
+          <div class="card">
+            <h3>Adventure Activities</h3>
+            <p>From river rafting to paragliding, we offer thrilling experiences for adrenaline junkies.</p>
+          </div>
+        </div>
+      </div>
+    </section> -->
+  
+    <br>
+
+    <!-- Destinations Section -->
+    <section id="destinations" class="destinations">
+      <div class="container">
+        <h2>Popular Blogs</h2>
+        <div class="destination-cards">
+          <a href="day1.html" class="card">
+            <img src="IMG/BG.png" alt="Mussorie">
+            <h3>Mussorie</h3>
+            <p>Queen Of Hills</p>
+          </a>
+          <a href="solo-trip.html" class="card">
+            <img src="IMG/BG.png" alt="Manali">
+            <h3>My First Solo Trip</h3>
+            <p>An Unexpected Journey</p>
+          </a>
+          <a href="rishikesh.html" class="card">
+            <img src="IMG/BG.png" alt="Leh-Ladakh">
+            <h3>Rishikesh</h3>
+            <p>Yog Nagri Rishikesh</p>
+          </a>
+        </div>
+      </div>
+    </section>
+  
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+      <div class="container">
+        <h2>Contact Us</h2>
+        <form>
+          <input type="text" placeholder="Your Name" required>
+          <input type="email" placeholder="Your Email" required>
+          <textarea placeholder="Your Message" required></textarea>
+          <button type="submit" class="cta-button">Send Message</button>
+        </form>
+      </div>
+    </section>
+    <footer>
+      <div>
+        <a >&copy; 2025 Travel4Soul. </a>
+      </div>
+    </footer>
+      <script src="/home_files/script.js"></script>
+  </body>
+</html>
